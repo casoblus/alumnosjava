@@ -31,4 +31,14 @@ class Alumno
 		System.out.println("\t**  Nota del alumno: " +nota+"        **");
 		System.out.println("\t****************************************");
 	}
+	
+	public float getNota()
+	{
+		return nota;
+	}
+
+	public void setNota( float _nota )
+	{
+		nota = _nota;
+	}
 }
