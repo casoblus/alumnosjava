@@ -24,11 +24,20 @@ class gesAlumnos
 		auxiliar = alumno1.getNota();
 		alumno1.setNota( alumno2.getNota() );
 		alumno2.setNota( auxiliar );
-		System.out.println("...................................[ OK! ]");
+		System.out.println("...........................................[ OK! ]");
 
 		System.out.println();
 		alumno1.MOSTRAR();
 		System.out.println();
 		alumno2.MOSTRAR();
+
+		Modulo modulo1 = new Modulo();
+		modulo1.ALTA();
+		modulo1.MOSTRAR();
+		modulo1.CAMBIAR_HORAS(245);
+		System.out.println();
+		System.out.println("CAMBIANDO HORAS ..................");
+		System.out.println();
+		modulo1.MOSTRAR();
 	}
 }
