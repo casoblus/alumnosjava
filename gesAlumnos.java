@@ -39,5 +39,34 @@ class gesAlumnos
 		System.out.println("CAMBIANDO HORAS ..................");
 		System.out.println();
 		modulo1.MOSTRAR();
+		
+		Modulo modulo2 = new Modulo();
+		modulo2.ALTA();
+
+		Modulo modulo3 = new Modulo();
+		modulo3.ALTA();
+
+		int code;
+
+		code = modulo1.BUSCAR_MODULO("programacion");
+		if ( code != -1 ) {
+			alumno1.ASIGNA_MODULO( code );
+		}
+		else{
+			code = modulo2.BUSCAR_MODULO("programacion");
+			if( code != -1){
+				alumno1.ASIGNA_MODULO( code );
+			}
+			else{
+				code = modulo3.BUSCAR_MODULO("programacion");
+				if( code != -1 ){
+					alumno1.ASIGNA_MODULO( code );
+				}
+				else{
+					System.out.println( "El modulo no se encuentra." );
+				}
+			}
+		}
+		alumno1.MOSTRAR();
 	}
 }

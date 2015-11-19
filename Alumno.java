@@ -4,6 +4,7 @@ class Alumno
 	private String nome;
 	private String dni;
 	private float nota;
+	private int modulo;
 
 	public void ALTA() 
 	{	
@@ -29,6 +30,7 @@ class Alumno
 		System.out.println("\t****************************************");
 		System.out.println("\t**  Dni del alumno: "+dni+";          **");
 		System.out.println("\t**  Nota del alumno: " +nota+"        **");
+		System.out.println("\t**  Modulo del alumno: " +modulo+"  **");
 		System.out.println("\t****************************************");
 	}
 	
@@ -41,4 +43,10 @@ class Alumno
 	{
 		nota = _nota;
 	}
+	
+	public void ASIGNA_MODULO( int code )
+	{
+		modulo = code;
+	}
+
 }

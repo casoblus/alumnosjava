@@ -26,4 +26,14 @@ class Modulo
 	{
 		num_horas = horas;
 	}
+	// retorna si existe
+	public int BUSCAR_MODULO( String nome )
+	{
+		if( nome_modulo.equals( nome ) )
+		{
+			return cod_modulo;
+		} else {
+			return -1;
+		}
+	}
 }
